@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<!-- Meta lines below for bootstrap integration -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap CSS link -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<!-- My own CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Name in browser tab -->
+		<title>Welcome Chris</title>
+	</head>
+
+	<!-- Main body -->
+	<body>
+		<!-- Bootstrap main container -->
+		<div class="'container-fluid">
+			<!-- Navbar -->
+			<!-- Bootstrap nav bar, 'expand' is breakpoint, last 2 are colours-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<!-- Clickable link containing logo -->
+				<a href="#" class="navbar-brand"
+					><img src="./images/logo.jpg" id="nav-logo"
+				/></a>
+				<!-- Nav button which renders when screen passes breakpoint, specified in the css class -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<!-- Nav bar menu icon for small screens as span element -->
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Unordered list to contain links -->
+					<ul class="navbar-nav">
+						<!-- 'ative' denotes which page the user is currently on -->
+						<li class="nav-item active">
+							<!-- Span class 'sr-only' is for screen readers which will say 'current' -->
+							<a class="nav-link" href="#titles-row"
+								>Welcome<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<!-- About link -->
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<!-- Contact link -->
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Titles -->
+			<div class="row" id="titles-row">
+				<div class="col" id="titles-col">
+					<!-- Box surrounding titles -->
+					<div class="middle-main" id="welcome-surround">
+						<h1>Welcome to my Blog</h1>
+						<h5>By Chris Norish</h5>
+						<!-- Button with link to contact -->
+						<button type="button" class="btn btn-dark" id="plan-adventure-btn">
+							Plan your own adventure!
+						</button>
+					</div>
+				</div>
+				<!-- col only displays when screen is lg size (992px) or larger -->
+				<div class="col-lg" id="titles-second-col"></div>
+			</div>
+
+			<!-- About/ card sections -->
+			<div class="row">
+				<!-- Bootstrap columns -->
+				<div class="col middle-main" id="middle-block-1">
+					<div class="card">
+						<div class="card-header"></div>
+						<img src="#" class="card-img-top" />
+						<div class="card-body"><p class="card-text"></p></div>
+					</div>
+				</div>
+				<div class="col middle-main" id="middle-block-2">
+					<div class="card">
+						<div class="card-header"></div>
+						<img src="#" class="card-img-top" />
+						<div class="card-body"><p class="card-text"></p></div>
+					</div>
+				</div>
+				<div class="col middle-main" id="middle-block-3">
+					<div class="card">
+						<div class="card-header"></div>
+						<img src="#" class="card-img-top" />
+						<div class="card-body"><p class="card-text"></p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="table"></div>
+			<div class="row" id="carousel"></div>
+			<div class="row" id="form"></div>
+			<div class="row"></div>
+		</div>
+
+		<!-- Bootstrap links - jQuery, Popper.js and bootstraps own js -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+* {
+	border: solid red 1px !important;
+}
+
+.col {
+	height: 40rem;
+}
+
+#titles-col,
+.middle-main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#titles-row {
+	background-image: url('./images/titles-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.middle-blocks {
+	width: 20rem;
+	height: 25rem;
+}
+
+#middle-block-1 {
+	background: rgba(255, 140, 12, 0.2);
+}
+#middle-block-2 {
+	background: rgba(0.2);
+}
+#middle-block-3 {
+	background: rgba(0.2);
+}
+
+#welcome-surround {
+	border: 1px solid black;
+	border-radius: 2rem;
+	height: 10rem;
+	width: 25rem;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-item {
+	border: 1px solid grey;
+	border-radius: 0.5rem;
+	margin: 0 0.25rem;
+}
+
+#nav-logo {
+	height: 3rem;
+	width: 3rem;
+}
+
+/*#plan-adventure-btn {
+	border: 1px solid grey;
+	background: rgba(255, 255, 255, 0.5);
+}*/
+
+/*Breakpoints*/
+/*@media only screen and (max-width: 480px) {
+	#titles-second-col {
+		display: none;
+	}
+}
+*/
