@@ -55,10 +55,20 @@
 	width: 3rem;
 }
 
-/*#plan-adventure-btn {
-	border: 1px solid grey;
-	background: rgba(255, 255, 255, 0.5);
-}*/
+.middle-main {
+	font-family: 'Helvetica';
+}
+
+#plan-adventure-btn {
+	width: 15rem;
+}
+
+/*Removes the undeline and blue highlighting from <a> tags*/
+a,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
 
 /*Breakpoints*/
 /*@media only screen and (max-width: 480px) {
